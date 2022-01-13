@@ -34,12 +34,17 @@ ul {
      display: flex;
      gap: 24px;
      padding: 48px 0;
+     justify-content: space-between;
      align-items: center;
      height: 360px;
+     
  }
 
-.hero-main {
-    flex: 1;
+.hero-main,
+img {
+    width: 360px;
+    flex:1 1 auto;
+    
  }
 
 .hero-main h1 {
@@ -52,9 +57,7 @@ h1, p {
     margin: 0;
 }
 
-
-
-ul,
+.header-link ul,
 .hero-main p,
 button {
     font-size: 18px;
@@ -66,12 +69,11 @@ button {
     padding: 8px 32px;
     border-radius: 8px;
     font-weight: 900;
-    flex-grow: 1;
     margin-top: 12px;
 }
 
  img {
-     flex: 1;
+   
      display: flex;
      align-items: center;
      justify-content: center;
@@ -79,3 +81,86 @@ button {
      color: #e5e7eb;
      align-self: stretch;
  }
+
+
+ .content h2 {
+     font-size: 36px;
+     font-weight: 900;
+     color: #1f2937;
+     text-align: center;
+     margin: 48px 0;
+ }
+
+.content img{
+    width: 180px;
+    height: 180px;
+    border: solid #3882f6 4px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.content ul {
+    justify-content:center ;
+    gap: 72px ;
+    margin-bottom: 144px;
+    
+}
+
+.content li {
+    width: 188px;
+    text-align: center;
+}
+
+.content li p {
+    color: rgb(155, 155, 155);
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.quote {
+   background-color: #e5e7eb;
+   height: 144px;
+   padding: 144px 360px;
+}
+
+.quote .quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote strong{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+}
+
+.call-to-act {
+    margin: 144px 200px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb; 
+    padding: 48px 144px; 
+}
+
+.call-to-act button {
+    border: solid 2px #e5e7eb;
+}
+
+.call-to-act strong {
+    font-size: 28px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 144px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+}
